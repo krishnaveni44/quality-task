@@ -1,0 +1,6 @@
+.bg-black a {
+  border-right: solid 1px #ffffff33;
+}
+.bg-black a:last-child {
+  border: none;
+}
