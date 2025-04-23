@@ -16,10 +16,10 @@ function App() {
   <div className="max-w-[1500px] w-full mx-auto flex flex-row justify-end flex-wrap hidden md:flex">
     <a href="" className="text-white font-bold mr-2 pr-3 pl-3 pt-2 pb-2">About Us</a>
     <a href="" className="text-white font-bold mr-2 pr-3 pl-3 pt-2 pb-2">Select Currency: GBP</a>
-    <a href="" className="text-white font-bold mr-2 pr-3 pl-3 pt-2 pb-2">Contact Us</a>
-    <a href="tel:6468510542" className="text-white font-bold mr-2 pr-3 pl-3 pt-2 pb-2">USA: 646 851 0542</a>
-    <a href="tel:4388003601" className="text-white font-bold mr-2 pr-3 pl-3 pt-2 pb-2">CAN: 438 800 3601</a>
-    <a href="tel:441135375643" className="text-white font-bold mr-2 pr-3 pl-3 pt-2 pb-2">INT: +44 113 537 5643</a>
+    <a href="" className="text-white font-bold mr-2 pr-3 pl-3 pt-2 pb-2"><i class="fa-regular fa-box mr-2"></i>Contact Us</a>
+    <a href="tel:6468510542" className="text-white font-bold mr-2 pr-3 pl-3 pt-2 pb-2"><i class="fa-solid fa-phone mr-2"></i>USA: 646 851 0542</a>
+    <a href="tel:4388003601" className="text-white font-bold mr-2 pr-3 pl-3 pt-2 pb-2"><i class="fa-solid fa-phone mr-2"></i>CAN: 438 800 3601</a>
+    <a href="tel:441135375643" className="text-white font-bold mr-2 pr-3 pl-3 pt-2 pb-2"><i class="fa-solid fa-phone mr-2"></i>INT: +44 113 537 5643</a>
   </div>
   <div className="text-white font-bold md:hidden pr-3 pl-3 pt-2 pb-2 text-center w-[100%]"><i className="fa-solid fa-phone mr-2"></i> Call Us</div>
 </div>
@@ -30,7 +30,7 @@ function App() {
 	 <div className="absolute top-9 left-4 flex flex-row flex-grow justify-between max-[1000px]:w-[80%]">
       <div className="hidden max-[1000px]:block">
         <button id="hamburger-menu" className="text-4xl">
-        <i className="fa-solid fa-bars text-2xl"></i>
+        <i className="fa-solid fa-bars text-2xl" style={{color: '#1a2348'}}></i>
         </button>
       </div>
 
@@ -46,7 +46,7 @@ function App() {
       </a> 
     </div>
      {/* Search Section  */}
-    <div className="flex-[2] flex">
+    <div className="flex-[2] flex search">
       <input type="text" placeholder="Search by reference" className="p-2 border rounded-l text-base w-full" style={{ borderColor: '#1a2348'}} />
       <button type="submit" className="p-2 border border-l-0 rounded-r bg-[#1a2348] text-white pl-8 pr-8" style={{ borderColor: '#1a2348'}}> 
       <FontAwesomeIcon icon={faMagnifyingGlass} className="text-2xl text-gray-700" />
@@ -56,7 +56,7 @@ function App() {
      {/* User/Cart Section  */}
      <div className="flex-1 flex flex-col items-end gap-2 max-[1000px]:items-start max-[1000px]:w-full hidden sm:block">
       <div className="flex items-center gap-2 max-[1000px]:justify-between max-[1000px]:w-full"> 
-        <FontAwesomeIcon icon={faUser} className="text-4xl" />
+        <FontAwesomeIcon icon={faUser} className="text-4xl ml-2" />
         <div className="flex flex-col mr-8 ml-2"> 
           <a href="#">Sign In</a>
            <a href="#">Register</a>
@@ -174,20 +174,66 @@ function App() {
 </div>
  {/* End  */}
  {/* highlights menu  */}
- <div className="pt-3 pb-3 bg-[#f5f5f5] hidden sm:block" style={{ boxShadow: '0 8px 8px 0 rgba(0, 0, 0, 0.09)' }}>
-  <div className="max-w-[1500px] w-full mx-auto flex flex-row flex-wrap gap-y-6 items-center">
-    <div className="flex items-center gap-2"> <i className="text-4xl"><img src="https://www.qualitybearingsonline.com/content/NewSite/Customer-Service.png" className="w-[40px]" /></i>
-      <div className="flex flex-col mr-8 ml-2"> <a href="#">Excellent Customer Service</a> </div>
-      <i className="text-4xl"><img src="https://www.qualitybearingsonline.com/content/NewSite/UK-Delivery.png" className="w-[40px]" /></i>
-      <div className="flex flex-col mr-8 ml-2"> <a href="#">1-3 Day Express Shipping With DHL</a> </div>
-      <i className="text-4xl"><img src="https://store-03842.mybigcommerce.com/content/Queens_Award_Logo_black.png" className="w-[30px]" /></i>
-      <div className="flex flex-col mr-8 ml-2"> <a href="#">Queen's Award For Enterprise Winners</a> </div>
-      <i className="text-4xl"><img src="https://www.qualitybearingsonline.com/content/NewSite/qms.png" className="w-[40px]" /></i>
-      <div className="flex flex-col mr-8 ml-2"> <a href="#">ISO 9001 : 2015 Cert. No.291342018</a> </div>
-      <i className="text-4xl"><img src="https://api.feefo.com/api/logo?merchantidentifier=quality-bearings-online&template=Service-Stars-Yellow-150x38.png" className="w-[100px]" /></i> 
-      <i className="text-4xl"><img src="https://cdn11.bigcommerce.com/s-03842/images/stencil/original/image-manager/digicert-logo-.png?t=1739359712" className="w-[100px]" /></i> </div>
-  </div>
-</div>
+ <div className="pt-3 pb-3 pl-8 bg-[#f5f5f5] hidden sm:block" style={{ boxShadow: '0 8px 8px 0 rgba(0, 0, 0, 0.09)' }} >
+      <div className="max-w-[1500px] w-full mx-auto flex justify-center flex-wrap gap-6 items-center">
+         <div className="flex items-center gap-2 max-w-[260px]">
+          <img
+            src="https://www.qualitybearingsonline.com/content/NewSite/Customer-Service.png"
+            className="w-[40px] flex-shrink-0"
+            alt="Customer Service"
+          />
+          <div className="text-sm text-center whitespace-normal leading-snug">
+            <a href="#">Excellent Customer Service</a>
+          </div>
+        </div>
+
+          <div className="flex items-center gap-2 max-w-[260px]">
+          <img
+            src="https://www.qualitybearingsonline.com/content/NewSite/UK-Delivery.png"
+            className="w-[40px] flex-shrink-0"
+            alt="Express Shipping"
+          />
+          <div className="text-sm text-center whitespace-normal leading-snug">
+            <a href="#">1-3 Day Express Shipping With DHL</a>
+          </div>
+        </div>
+
+         <div className="flex items-center gap-2 max-w-[260px]">
+          <img
+            src="https://store-03842.mybigcommerce.com/content/Queens_Award_Logo_black.png"
+            className="w-[30px] flex-shrink-0"
+            alt="Queen's Award"
+          />
+          <div className="text-sm text-center whitespace-normal leading-snug">
+            <a href="#">Queen&apos;s Award For Enterprise Winners</a>
+          </div>
+        </div>
+
+         <div className="flex items-center gap-2 max-w-[260px]">
+          <img
+            src="https://www.qualitybearingsonline.com/content/NewSite/qms.png"
+            className="w-[40px] flex-shrink-0"
+            alt="ISO Certification"
+          />
+          <div className="text-sm text-center whitespace-normal leading-snug">
+            <a href="#">ISO 9001 : 2015 Cert. No.291342018</a>
+          </div>
+        </div>
+        
+        <div className="flex flex-wrap justify-center gap-4">
+          <img
+            src="https://api.feefo.com/api/logo?merchantidentifier=quality-bearings-online&template=Service-Stars-Yellow-150x38.png"
+            className="w-[180px]"
+            alt="Feefo Service Stars"
+          />
+          <img
+            src="https://cdn11.bigcommerce.com/s-03842/images/stencil/original/image-manager/digicert-logo-.png?t=1739359712"
+            className="w-[120px]"
+            alt="Digicert"
+          />
+        </div>
+      </div>
+    </div>
  {/* End  */}
  {/* Industry leading section */}
  <div>
@@ -270,29 +316,42 @@ function App() {
   </div>
   <p className="text-[#9b9898] text-xs">Independent Service Rating based on 1154 verified reviews.<a href="" className="text-[#0088c1]">Read all reviews</a></p>
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 px-4 max-w-[1300px] mx-auto mt-3 pt-6 border-t">
-    <div>
-      <div className="flex items-left justify-left sm:justify-start gap-1 text-yellow-500 text-xl"> <span>★</span> <span>★</span> <span>★</span> <span>★</span> <span>☆</span> </div>
-		<p className="text-left font-bold text-[14px]">First className</p>
-		<p className="text-left font-bold text-[14px] mt-1">Excellent</p>
-		<p className="text-[#9b9898] text-xs text-left mt-2">Christopher Shaw - 21 April 2025</p>
+  
+    <div className="text-center sm:text-left">
+      <div className="flex justify-center sm:justify-start gap-1 text-yellow-500 text-xl">
+        <span>★</span> <span>★</span> <span>★</span> <span>★</span> <span>☆</span>
+      </div>
+      <p className="font-bold text-[14px]">First class</p>
+      <p className="font-bold text-[14px] mt-1">Excellent</p>
+      <p className="text-[#9b9898] text-xs mt-2">Christopher Shaw - 21 April 2025</p>
     </div>
-	  <div>
-      <div className="flex items-left justify-left sm:justify-start gap-1 text-yellow-500 text-xl"> <span>★</span> <span>★</span> <span>★</span> <span>★</span> <span>☆</span> </div>
-		<p className="text-left font-bold text-[14px]">Poor communication and no proactive follow-up</p>
-		<p className="text-left font-bold text-[14px] mt-1">Although they investigated and mitigated our shipping delays, it wasn't until I contacted the company to follow-up on...</p>
-		<p className="text-[#9b9898] text-xs text-left mt-2">Trusted Customer - 17 April 2025</p>
+  
+    <div className="text-center sm:text-left">
+      <div className="flex justify-center sm:justify-start gap-1 text-yellow-500 text-xl">
+        <span>★</span> <span>★</span> <span>★</span> <span>★</span> <span>☆</span>
+      </div>
+      <p className="font-bold text-[14px]">Poor communication and no proactive follow-up</p>
+      <p className="font-bold text-[14px] mt-1">Although they investigated and mitigated our shipping delays, it wasn't until I contacted the company to follow-up on...</p>
+      <p className="text-[#9b9898] text-xs mt-2">Trusted Customer - 17 April 2025</p>
     </div>
-	  <div>
-      <div className="flex items-left justify-left sm:justify-start gap-1 text-yellow-500 text-xl"> <span>★</span> <span>★</span> <span>★</span> <span>★</span> <span>☆</span> </div>
-		<p className="text-left text-[14px] mt-1">Easy to make a purchase and fast delivery.</p>
-		<p className="text-[#9b9898] text-xs text-left mt-2">Trusted Customer - 16 April 2025</p>
+  
+    <div className="text-center sm:text-left">
+      <div className="flex justify-center sm:justify-start gap-1 text-yellow-500 text-xl">
+        <span>★</span> <span>★</span> <span>★</span> <span>★</span> <span>☆</span>
+      </div>
+      <p className="text-[14px] mt-1">Easy to make a purchase and fast delivery.</p>
+      <p className="text-[#9b9898] text-xs mt-2">Trusted Customer - 16 April 2025</p>
     </div>
-	  <div>
-      <div className="flex items-left justify-left sm:justify-start gap-1 text-yellow-500 text-xl"> <span>★</span> <span>★</span> <span>★</span> <span>★</span> <span>☆</span> </div>
-		<p className="text-left font-bold text-[14px]">Great Service EVERY Time!</p>
-		<p className="text-left font-bold text-[14px] mt-1">Great service. Fast delivery. I continue to use Quality Bearings Online because everything is great, every time!</p>
-		<p className="text-[#9b9898] text-xs text-left mt-2">William McHargue - 17 April 2025</p>
+  
+    <div className="text-center sm:text-left">
+      <div className="flex justify-center sm:justify-start gap-1 text-yellow-500 text-xl">
+        <span>★</span> <span>★</span> <span>★</span> <span>★</span> <span>☆</span>
+      </div>
+      <p className="font-bold text-[14px]">Great Service EVERY Time!</p>
+      <p className="font-bold text-[14px] mt-1">Great service. Fast delivery. I continue to use Quality Bearings Online because everything is great, every time!</p>
+      <p className="text-[#9b9898] text-xs mt-2">William McHargue - 17 April 2025</p>
     </div>
+  
   </div>
 </div>
  {/* End  */}

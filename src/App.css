@@ -1,6 +1,46 @@
 .bg-black a {
   border-right: solid 1px #ffffff33;
+  color: #fff;
+}
+.bg-black a:hover {
+  color: #ca9618;
 }
 .bg-black a:last-child {
   border: none;
+}
+.flex-wrap ul li a {
+  color: #fff;
+}
+.flex-wrap ul li a:hover {
+  color: #ca9618;
+}
+.flex-wrap ul li ul li a {
+  color: #000;
+}
+button {
+  background-color: #1a2348;
+  border-radius: 0 5px 5px 0;
+  color: #fff;
+}
+button i {
+  color: #fff;
+  background-color: #fff;
+}
+.gap-6 button {
+  background: #ca9618;
+  border-radius: 0 3px 3px 0;
+}
+
+.gap-6 input {
+  border-radius: 3px 0 0 3px;
+}
+
+#hamburger-menu {
+  background: none;
+}
+svg[data-icon="magnifying-glass"] {
+  color: #fff;
+}
+.search {
+  margin: 0 auto;
 }
